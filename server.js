@@ -8,6 +8,9 @@ const cors = require('cors');
 const crypto = require('crypto');
 const pino = require("pino");
 
+const app = express();
+const PORT = process.env.PORT || 2007;
+
 let totalRequests = 0;
 
 setInterval(() => {
